@@ -1,0 +1,43 @@
+.wrapper {
+  width: 90%;
+  min-width: 910px;
+  height: 400px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  .peg {
+    width: 33%;
+    height: 100%;
+    padding: 0;
+    background: #ddd;
+    display: inline-block;
+    box-sizing: border-box;
+    list-style: none; 
+    .disk {
+      vertical-align: bottom;
+      height: 33%;
+      background: gold;
+      border: 30px dotted orange;
+      border-radius: 15px 15px 0 0;
+      box-sizing: border-box;
+      margin: 0 auto;
+    }
+    
+    .disk:active {
+      box-shadow: 1px 1px 10px #000;
+    }
+    
+    #disk-1 {
+      width: 50%;
+    }
+    #disk-2 {
+      width: 75%;
+    }
+    #disk-3 {
+      width: 100%;
+    }
+    .empty-slot {
+      height: 33%;
+      box-sizing: border-box;
+    }
+  }
+}
